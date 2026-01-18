@@ -40,7 +40,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.main.class>edu.put.ma.App</project.main.class>
 		<slf4j.version>1.7.12</slf4j.version>
-		<log4j.version>2.17.1</log4j.version>
+		<log4j.version>2.25.3</log4j.version>
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
 		<sonar.java.source>1.8</sonar.java.source>
 	</properties>
@@ -278,7 +278,7 @@
 		<profile>
 			<id>java-8</id>
 			<properties>
-				<aspectjrt.version>1.9.19</aspectjrt.version>
+				<aspectjrt.version>1.8.8</aspectjrt.version>
 			</properties>
 			<activation>
 				<activeByDefault>true</activeByDefault>

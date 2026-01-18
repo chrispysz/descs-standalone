@@ -42,7 +42,7 @@ DESCS-STANDALONE is the open source project available in the [public repository]
 
 To build the DESCS-STANDALONE package one must have installed: 
 
-- stable release of [Oracle JDK 6][jdk] or above (however, Oracle JDK 7 is recommended), 
+- stable release of [Oracle JDK 8][jdk] or above, 
 - stable release of [Apache Maven 3.0.3][mvn] or above, 
 - stable release of [Git][git]. 
 
@@ -55,24 +55,22 @@ git clone https://github.com/mantczak/descs-standalone.git descs-standalone
 cd descs-standalone
 ```
 
-**_According to an installed version of Oracle JDK, one should adjust the commands presented below with one of the following values "6-7" or "8" introduced instead of constant 'x'_**.
-
 ### Build and tests (Windows)
 
 ```
-build-and-tests-java-x.bat
+build-and-tests.bat
 ```
 
 ### Build only (Windows)
 
 ```
-build-only-java-x.bat
+build-only.bat
 ```
 
 ### Tests only (Windows)
 
 ```
-tests-only-java-x.bat
+tests-only.bat
 ```
 
 **_According to configuration of Linux/Mac machine (when maven3 package is installed, and 'No command mvn found') might be a need to add 'mvn3' symlink to 'mvn'._**
@@ -80,31 +78,28 @@ tests-only-java-x.bat
 ### Build and tests (Linux/Mac)
 
 ```sh
-chmod u+x build-and-tests-java-x.sh
-./build-and-tests-java-x.sh
+chmod u+x build-and-tests.sh
+./build-and-tests.sh
 ```
 
 ### Build only (Linux/Mac)
 
 ```sh
-chmod u+x build-only-java-x.sh
-./build-only-java-x.sh
+chmod u+x build-only.sh
+./build-only.sh
 ```
 
 ### Tests only (Linux/Mac)
 
 ```sh
-chmod u+x tests-only-java-x.sh
-./tests-only-java-x.sh
+chmod u+x tests-only.sh
+./tests-only.sh
 ```
 
 ### Tested configurations
 
 - Linux Ubuntu 14.04 LTS x64, Oracle JDK 1.8.0_73 x64, Apache Maven 3.3.9.
-- OS X El Capitan 10.11.3, Oracle JDK 1.7.0_80, Apache Maven 3.3.9.
-- Linux Ubuntu 14.04 LTS x64, Open JDK 1.7.0_79 x64, Apache Maven 3.0.5.
-- Windows 10 x64, Oracle JDK 1.6.0_45 i586, Apache Maven 3.2.3.
-- Linux Mint 11 Katya x64, Oracle JDK 1.6.0_26 x64, Apache Maven 3.0.3.
+- Windows 10 x64, Oracle JDK 1.8.0_73 i586, Apache Maven 3.3.9.
 
 DESCS-STANDALONE was tested on above configurations, but presumably it will work on other configurations too.
 
