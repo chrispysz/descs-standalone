@@ -1,1 +1,1 @@
-mvn clean compile test-compile antrun:run test assembly:single -P java-8
+mvn clean compile test-compile antrun:run test assembly:single -P java-21
